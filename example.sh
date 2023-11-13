@@ -4,7 +4,6 @@ set -e
 
 test_var="foo"
 
-# Testing behavir of the new scrit
 echo ${test_var}
 
 function loading_icon() {
