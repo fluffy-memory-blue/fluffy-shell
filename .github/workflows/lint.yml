@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: hbuczynski/action-shellcheck@v1
+      - uses: hbuczynski/action-shellcheck@master
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
