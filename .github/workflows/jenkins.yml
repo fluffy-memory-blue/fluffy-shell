@@ -15,7 +15,7 @@ jobs:
           jenkins_user: ${{ secrets.JENKINS_USER }}
           jenkins_token: ${{ secrets.JENKINS_TOKEN }}
           proxy: ${{ secrets.JENKINS_PROXY }}
-          job_name: "Github action"
+          job_name: "TestAction"
           job_params: |
             {
               "param_1": "value_1",
