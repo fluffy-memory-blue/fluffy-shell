@@ -16,3 +16,9 @@ jobs:
           jenkins_token: ${{ secrets.JENKINS_TOKEN }}
           proxy: ${{ secrets.JENKINS_PROXY }}
           job_name: "TestAction"
+          job_params: |
+          {
+             "param_1": "value_1",
+             "param_2": "value_2"
+          }
+          job_timeout: "3600" # Default 30 sec. (optional)
