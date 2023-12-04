@@ -50,7 +50,7 @@ function loadind_icon2() {
 }
 
 
-
+# Test my enlgish skillls in this scrit.
 loading_icon 5 "I'm loading!"
 
 loadind_icon2 5 "Hehe, loading again!"
