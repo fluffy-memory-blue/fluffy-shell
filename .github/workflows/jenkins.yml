@@ -1,0 +1,24 @@
+name: jenkins
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  testing:
+    name: Trigger Jenkins Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check jenkins triggering
+        uses: toptal/jenkins-job-trigger-action@master
+        with:
+          jenkins_url: "https://9467-89-64-95-89.ngrok-free.app"
+          jenkins_user: ${{ secrets.JENKINS_USER }}
+          jenkins_token: ${{ secrets.JENKINS_TOKEN }}
+          proxy: ${{ secrets.JENKINS_PROXY }}
+          job_name: "Github action"
+          job_params: |
+            {
+              "param_1": "value_1",
+              "param_2": "value_2"
+            }
+          job_timeout: "3600" # Default 30 sec. (optional)
